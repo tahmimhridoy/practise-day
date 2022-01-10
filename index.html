@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practise-day</title>
+    <style>
+        body{
+            font-family: verdana;
+        }
+        .container{
+            display: flex;
+            width: 90%;
+            margin: auto;
+        }
+        .ordered-list::marker{
+            color:brown;
+        }
+        .ordered-list > ol > li:nth-child(odd){
+            color:crimson;
+        }
+        .ordered-list > ol > li:nth-child(even){
+            color:deepskyblue;
+        }
+        .block-element > ol > li:nth-child(odd){
+            color:indianred;
+        }
+        .block-element > ol > li:nth-child(even){
+            color:lawngreen;
+        }
+        .set-width{
+            width: 30%;
+            border: 2px solid crimson;
+            margin-right: 3.33%;
+            background-color: gray;
+        }
+        .inline-block-element > ol > li:nth-child(odd){
+            color:mediumblue;
+        }
+        .inline-block-element > ol > li:nth-child(even){
+            color:yellowgreen;
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <div class="set-width ordered-list">
+            <ol>
+                <li>span</li>
+                <li>anchor</li>
+                <li>input</li>
+                <li>label</li>
+                <li>small</li>
+                <li>img</li>
+                <li>i</li>
+            </ol>
+        </div>
+        <div class="set-width block-element">
+            <ol>
+                <li>h1-h6</li>
+                <li>paragraph</li>
+                <li>div</li>
+                <li>section</li>
+                <li>airticle</li>
+                <li>form</li>
+                <li>footer</li>
+                <li>nav</li>
+                <li>aside</li>
+                <li>ol</li>
+            </ol>
+        </div>
+        <div class="set-width inline-block-element">
+            <ol>
+                <li>Button</li>
+                <li>Input</li>
+                <li>Select</li>
+                <li>Textarea</li>
+                <li>img</li>
+            </ol>
+        </div>
+    </main>
+</body>
+</html>
